@@ -1,0 +1,6 @@
+framework module Pods_the_milky_wayTests {
+  umbrella header "Pods-the-milky-wayTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

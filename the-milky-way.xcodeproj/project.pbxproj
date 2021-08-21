@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5722D5636438380B5DF40DC8 /* Pods_the_milky_way_the_milky_wayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F40B04025F187D85CC3B68E /* Pods_the_milky_way_the_milky_wayUITests.framework */; };
+		C71C974526D1521200C99900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71C974426D1521200C99900 /* AppDelegate.swift */; };
+		C71C974726D1521200C99900 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71C974626D1521200C99900 /* SceneDelegate.swift */; };
+		C71C974926D1521200C99900 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71C974826D1521200C99900 /* ListViewController.swift */; };
+		C71C974C26D1521200C99900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71C974A26D1521200C99900 /* Main.storyboard */; };
+		C71C974E26D1521300C99900 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C71C974D26D1521300C99900 /* Assets.xcassets */; };
+		C71C975126D1521300C99900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71C974F26D1521300C99900 /* LaunchScreen.storyboard */; };
+		C71C975C26D1521300C99900 /* the_milky_wayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71C975B26D1521300C99900 /* the_milky_wayTests.swift */; };
+		C71C976726D1521300C99900 /* the_milky_wayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71C976626D1521300C99900 /* the_milky_wayUITests.swift */; };
+		C71C978326D15F7100C99900 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71C978226D15F7100C99900 /* DetailsViewController.swift */; };
+		C7838FF207C456CEBED3AFFF /* Pods_the_milky_way.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E27A55649D9BD190D10AF46 /* Pods_the_milky_way.framework */; };
+		C7FF4D9726D1685000388253 /* NasaImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4D9626D1685000388253 /* NasaImage.swift */; };
+		C7FF4DA026D17C2500388253 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4D9F26D17C2500388253 /* ApiManager.swift */; };
+		C7FF4DA826D17C3400388253 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4DA726D17C3400388253 /* ApiRouter.swift */; };
+		C7FF4DAD26D1816600388253 /* NasaImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4DAC26D1816600388253 /* NasaImages.swift */; };
+		C7FF4DB226D185C600388253 /* MilkyWayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4DB126D185C600388253 /* MilkyWayError.swift */; };
+		EEF9618783A86F6602133D7B /* Pods_the_milky_wayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9236D15FB80F31184BFAD569 /* Pods_the_milky_wayTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C71C975826D1521300C99900 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C71C973926D1521200C99900 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C71C974026D1521200C99900;
+			remoteInfo = "the-milky-way";
+		};
+		C71C976326D1521300C99900 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C71C973926D1521200C99900 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C71C974026D1521200C99900;
+			remoteInfo = "the-milky-way";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26BF7547281ACE1090381E6B /* Pods-the-milky-wayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-milky-wayTests.release.xcconfig"; path = "Target Support Files/Pods-the-milky-wayTests/Pods-the-milky-wayTests.release.xcconfig"; sourceTree = "<group>"; };
+		29BCDE5EDC64A85BD333600D /* Pods-the-milky-way-the-milky-wayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-milky-way-the-milky-wayUITests.release.xcconfig"; path = "Target Support Files/Pods-the-milky-way-the-milky-wayUITests/Pods-the-milky-way-the-milky-wayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		43A2D7787B335C1CC7409C6D /* Pods-the-milky-way.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-milky-way.debug.xcconfig"; path = "Target Support Files/Pods-the-milky-way/Pods-the-milky-way.debug.xcconfig"; sourceTree = "<group>"; };
+		5F40B04025F187D85CC3B68E /* Pods_the_milky_way_the_milky_wayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_the_milky_way_the_milky_wayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E3410ACD4DF79E098B628AA /* Pods-the-milky-way-the-milky-wayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-milky-way-the-milky-wayUITests.debug.xcconfig"; path = "Target Support Files/Pods-the-milky-way-the-milky-wayUITests/Pods-the-milky-way-the-milky-wayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9236D15FB80F31184BFAD569 /* Pods_the_milky_wayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_the_milky_wayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E27A55649D9BD190D10AF46 /* Pods_the_milky_way.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_the_milky_way.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C71C974126D1521200C99900 /* the-milky-way.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "the-milky-way.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C71C974426D1521200C99900 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C71C974626D1521200C99900 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C71C974826D1521200C99900 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		C71C974B26D1521200C99900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C71C974D26D1521300C99900 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C71C975026D1521300C99900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C71C975226D1521300C99900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C71C975726D1521300C99900 /* the-milky-wayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "the-milky-wayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C71C975B26D1521300C99900 /* the_milky_wayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = the_milky_wayTests.swift; sourceTree = "<group>"; };
+		C71C975D26D1521300C99900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C71C976226D1521300C99900 /* the-milky-wayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "the-milky-wayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C71C976626D1521300C99900 /* the_milky_wayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = the_milky_wayUITests.swift; sourceTree = "<group>"; };
+		C71C976826D1521300C99900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C71C978226D15F7100C99900 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		C7FF4D9626D1685000388253 /* NasaImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaImage.swift; sourceTree = "<group>"; };
+		C7FF4D9F26D17C2500388253 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		C7FF4DA726D17C3400388253 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		C7FF4DAC26D1816600388253 /* NasaImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaImages.swift; sourceTree = "<group>"; };
+		C7FF4DB126D185C600388253 /* MilkyWayError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkyWayError.swift; sourceTree = "<group>"; };
+		CBACE2CC97D5E748E021CF86 /* Pods-the-milky-wayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-milky-wayTests.debug.xcconfig"; path = "Target Support Files/Pods-the-milky-wayTests/Pods-the-milky-wayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB2DC2261FED638E131B5039 /* Pods-the-milky-way.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-milky-way.release.xcconfig"; path = "Target Support Files/Pods-the-milky-way/Pods-the-milky-way.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C71C973E26D1521200C99900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7838FF207C456CEBED3AFFF /* Pods_the_milky_way.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C71C975426D1521300C99900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEF9618783A86F6602133D7B /* Pods_the_milky_wayTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C71C975F26D1521300C99900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5722D5636438380B5DF40DC8 /* Pods_the_milky_way_the_milky_wayUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65F426D19B868DB8C9E4BFF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43A2D7787B335C1CC7409C6D /* Pods-the-milky-way.debug.xcconfig */,
+				EB2DC2261FED638E131B5039 /* Pods-the-milky-way.release.xcconfig */,
+				6E3410ACD4DF79E098B628AA /* Pods-the-milky-way-the-milky-wayUITests.debug.xcconfig */,
+				29BCDE5EDC64A85BD333600D /* Pods-the-milky-way-the-milky-wayUITests.release.xcconfig */,
+				CBACE2CC97D5E748E021CF86 /* Pods-the-milky-wayTests.debug.xcconfig */,
+				26BF7547281ACE1090381E6B /* Pods-the-milky-wayTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C71C973826D1521200C99900 = {
+			isa = PBXGroup;
+			children = (
+				C71C974326D1521200C99900 /* the-milky-way */,
+				C71C975A26D1521300C99900 /* the-milky-wayTests */,
+				C71C976526D1521300C99900 /* the-milky-wayUITests */,
+				C71C974226D1521200C99900 /* Products */,
+				65F426D19B868DB8C9E4BFF6 /* Pods */,
+				FF1394B287A77353AB68B9B8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C71C974226D1521200C99900 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C71C974126D1521200C99900 /* the-milky-way.app */,
+				C71C975726D1521300C99900 /* the-milky-wayTests.xctest */,
+				C71C976226D1521300C99900 /* the-milky-wayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C71C974326D1521200C99900 /* the-milky-way */ = {
+			isa = PBXGroup;
+			children = (
+				C71C977B26D1561100C99900 /* Controllers */,
+				C71C977A26D155D900C99900 /* Models */,
+				C71C977926D155C900C99900 /* ViewModels */,
+				C71C977826D155C100C99900 /* Common */,
+				C71C977726D155AD00C99900 /* Networking */,
+				C71C974A26D1521200C99900 /* Main.storyboard */,
+				C71C974D26D1521300C99900 /* Assets.xcassets */,
+				C71C974F26D1521300C99900 /* LaunchScreen.storyboard */,
+				C71C975226D1521300C99900 /* Info.plist */,
+			);
+			path = "the-milky-way";
+			sourceTree = "<group>";
+		};
+		C71C975A26D1521300C99900 /* the-milky-wayTests */ = {
+			isa = PBXGroup;
+			children = (
+				C71C975B26D1521300C99900 /* the_milky_wayTests.swift */,
+				C71C975D26D1521300C99900 /* Info.plist */,
+			);
+			path = "the-milky-wayTests";
+			sourceTree = "<group>";
+		};
+		C71C976526D1521300C99900 /* the-milky-wayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C71C976626D1521300C99900 /* the_milky_wayUITests.swift */,
+				C71C976826D1521300C99900 /* Info.plist */,
+			);
+			path = "the-milky-wayUITests";
+			sourceTree = "<group>";
+		};
+		C71C977726D155AD00C99900 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C7FF4D9F26D17C2500388253 /* ApiManager.swift */,
+				C7FF4DA726D17C3400388253 /* ApiRouter.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C71C977826D155C100C99900 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C71C974426D1521200C99900 /* AppDelegate.swift */,
+				C71C974626D1521200C99900 /* SceneDelegate.swift */,
+				C7FF4DB126D185C600388253 /* MilkyWayError.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C71C977926D155C900C99900 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C71C977A26D155D900C99900 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C7FF4D9626D1685000388253 /* NasaImage.swift */,
+				C7FF4DAC26D1816600388253 /* NasaImages.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C71C977B26D1561100C99900 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C71C974826D1521200C99900 /* ListViewController.swift */,
+				C71C978226D15F7100C99900 /* DetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FF1394B287A77353AB68B9B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E27A55649D9BD190D10AF46 /* Pods_the_milky_way.framework */,
+				5F40B04025F187D85CC3B68E /* Pods_the_milky_way_the_milky_wayUITests.framework */,
+				9236D15FB80F31184BFAD569 /* Pods_the_milky_wayTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C71C974026D1521200C99900 /* the-milky-way */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C71C976B26D1521300C99900 /* Build configuration list for PBXNativeTarget "the-milky-way" */;
+			buildPhases = (
+				3E6322A9918602EE0AB5E3CC /* [CP] Check Pods Manifest.lock */,
+				C71C973D26D1521200C99900 /* Sources */,
+				C71C973E26D1521200C99900 /* Frameworks */,
+				C71C973F26D1521200C99900 /* Resources */,
+				6E9C75203030BAC4B188D97B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "the-milky-way";
+			productName = "the-milky-way";
+			productReference = C71C974126D1521200C99900 /* the-milky-way.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C71C975626D1521300C99900 /* the-milky-wayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C71C976E26D1521300C99900 /* Build configuration list for PBXNativeTarget "the-milky-wayTests" */;
+			buildPhases = (
+				EA6CD73A14098E1D8C8393E6 /* [CP] Check Pods Manifest.lock */,
+				C71C975326D1521300C99900 /* Sources */,
+				C71C975426D1521300C99900 /* Frameworks */,
+				C71C975526D1521300C99900 /* Resources */,
+				ED0E476567B4EDF74FD63914 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C71C975926D1521300C99900 /* PBXTargetDependency */,
+			);
+			name = "the-milky-wayTests";
+			productName = "the-milky-wayTests";
+			productReference = C71C975726D1521300C99900 /* the-milky-wayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C71C976126D1521300C99900 /* the-milky-wayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C71C977126D1521300C99900 /* Build configuration list for PBXNativeTarget "the-milky-wayUITests" */;
+			buildPhases = (
+				6AF6793426D87BC589043F99 /* [CP] Check Pods Manifest.lock */,
+				C71C975E26D1521300C99900 /* Sources */,
+				C71C975F26D1521300C99900 /* Frameworks */,
+				C71C976026D1521300C99900 /* Resources */,
+				35E8AB07BE66A25098B4D1EF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C71C976426D1521300C99900 /* PBXTargetDependency */,
+			);
+			name = "the-milky-wayUITests";
+			productName = "the-milky-wayUITests";
+			productReference = C71C976226D1521300C99900 /* the-milky-wayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C71C973926D1521200C99900 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					C71C974026D1521200C99900 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					C71C975626D1521300C99900 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = C71C974026D1521200C99900;
+					};
+					C71C976126D1521300C99900 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = C71C974026D1521200C99900;
+					};
+				};
+			};
+			buildConfigurationList = C71C973C26D1521200C99900 /* Build configuration list for PBXProject "the-milky-way" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C71C973826D1521200C99900;
+			productRefGroup = C71C974226D1521200C99900 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C71C974026D1521200C99900 /* the-milky-way */,
+				C71C975626D1521300C99900 /* the-milky-wayTests */,
+				C71C976126D1521300C99900 /* the-milky-wayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C71C973F26D1521200C99900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C71C975126D1521300C99900 /* LaunchScreen.storyboard in Resources */,
+				C71C974E26D1521300C99900 /* Assets.xcassets in Resources */,
+				C71C974C26D1521200C99900 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C71C975526D1521300C99900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C71C976026D1521300C99900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35E8AB07BE66A25098B4D1EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-the-milky-way-the-milky-wayUITests/Pods-the-milky-way-the-milky-wayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-the-milky-way-the-milky-wayUITests/Pods-the-milky-way-the-milky-wayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-the-milky-way-the-milky-wayUITests/Pods-the-milky-way-the-milky-wayUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E6322A9918602EE0AB5E3CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-the-milky-way-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AF6793426D87BC589043F99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-the-milky-way-the-milky-wayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E9C75203030BAC4B188D97B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-the-milky-way/Pods-the-milky-way-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-the-milky-way/Pods-the-milky-way-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-the-milky-way/Pods-the-milky-way-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA6CD73A14098E1D8C8393E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-the-milky-wayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED0E476567B4EDF74FD63914 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-the-milky-wayTests/Pods-the-milky-wayTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-the-milky-wayTests/Pods-the-milky-wayTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-the-milky-wayTests/Pods-the-milky-wayTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C71C973D26D1521200C99900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C71C974926D1521200C99900 /* ListViewController.swift in Sources */,
+				C71C974526D1521200C99900 /* AppDelegate.swift in Sources */,
+				C7FF4D9726D1685000388253 /* NasaImage.swift in Sources */,
+				C71C974726D1521200C99900 /* SceneDelegate.swift in Sources */,
+				C7FF4DAD26D1816600388253 /* NasaImages.swift in Sources */,
+				C7FF4DA026D17C2500388253 /* ApiManager.swift in Sources */,
+				C71C978326D15F7100C99900 /* DetailsViewController.swift in Sources */,
+				C7FF4DB226D185C600388253 /* MilkyWayError.swift in Sources */,
+				C7FF4DA826D17C3400388253 /* ApiRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C71C975326D1521300C99900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C71C975C26D1521300C99900 /* the_milky_wayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C71C975E26D1521300C99900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C71C976726D1521300C99900 /* the_milky_wayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C71C975926D1521300C99900 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C71C974026D1521200C99900 /* the-milky-way */;
+			targetProxy = C71C975826D1521300C99900 /* PBXContainerItemProxy */;
+		};
+		C71C976426D1521300C99900 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C71C974026D1521200C99900 /* the-milky-way */;
+			targetProxy = C71C976326D1521300C99900 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C71C974A26D1521200C99900 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C71C974B26D1521200C99900 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C71C974F26D1521300C99900 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C71C975026D1521300C99900 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C71C976926D1521300C99900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C71C976A26D1521300C99900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C71C976C26D1521300C99900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43A2D7787B335C1CC7409C6D /* Pods-the-milky-way.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "the-milky-way/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.steeve.the-milky-way";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C71C976D26D1521300C99900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2DC2261FED638E131B5039 /* Pods-the-milky-way.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "the-milky-way/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.steeve.the-milky-way";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C71C976F26D1521300C99900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBACE2CC97D5E748E021CF86 /* Pods-the-milky-wayTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "the-milky-wayTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.steeve.the-milky-wayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/the-milky-way.app/the-milky-way";
+			};
+			name = Debug;
+		};
+		C71C977026D1521300C99900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26BF7547281ACE1090381E6B /* Pods-the-milky-wayTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "the-milky-wayTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.steeve.the-milky-wayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/the-milky-way.app/the-milky-way";
+			};
+			name = Release;
+		};
+		C71C977226D1521300C99900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E3410ACD4DF79E098B628AA /* Pods-the-milky-way-the-milky-wayUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "the-milky-wayUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.steeve.the-milky-wayUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "the-milky-way";
+			};
+			name = Debug;
+		};
+		C71C977326D1521300C99900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29BCDE5EDC64A85BD333600D /* Pods-the-milky-way-the-milky-wayUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "the-milky-wayUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.steeve.the-milky-wayUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "the-milky-way";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C71C973C26D1521200C99900 /* Build configuration list for PBXProject "the-milky-way" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C71C976926D1521300C99900 /* Debug */,
+				C71C976A26D1521300C99900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C71C976B26D1521300C99900 /* Build configuration list for PBXNativeTarget "the-milky-way" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C71C976C26D1521300C99900 /* Debug */,
+				C71C976D26D1521300C99900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C71C976E26D1521300C99900 /* Build configuration list for PBXNativeTarget "the-milky-wayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C71C976F26D1521300C99900 /* Debug */,
+				C71C977026D1521300C99900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C71C977126D1521300C99900 /* Build configuration list for PBXNativeTarget "the-milky-wayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C71C977226D1521300C99900 /* Debug */,
+				C71C977326D1521300C99900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C71C973926D1521200C99900 /* Project object */;
+}
