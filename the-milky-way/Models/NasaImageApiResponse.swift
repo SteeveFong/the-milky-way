@@ -7,6 +7,10 @@
 
 import Foundation
 
-struct NasaImages: Decodable {
+struct NasaImageApiResponse: Decodable {
+  let collection: NasaImageCollection
+}
+
+struct NasaImageCollection: Decodable {
   let items: [NasaImage]
 }

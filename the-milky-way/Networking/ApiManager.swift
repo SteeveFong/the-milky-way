@@ -12,23 +12,29 @@ class ApiManager {
     static let shared = ApiManager()
     
     let sessionManager: Session = {
+        var eventMonitors = [EventMonitor]()
         let config = URLSessionConfiguration.af.default
         config.requestCachePolicy = .returnCacheDataElseLoad
         
-        return Session(configuration: config)
+        #if DEBUG
+        let networkLogger = NetworkLogger()
+        eventMonitors.append(networkLogger)
+        #endif
+        
+        return Session(configuration: config, eventMonitors: eventMonitors)
     }()
     
-    func fetchNasaImages(query: String?, completion: @escaping ([NasaImage]) -> Void) {
+    func fetchNasaImages(_ query: String?, completion: @escaping ([NasaImage]) -> Void) {
         sessionManager
             .request(ApiRouter.fetchNasaImages(query))
-            .responseDecodable(of: NasaImages.self) {
+            .responseDecodable(of: NasaImageApiResponse.self) {
                 response in
                 
-                guard let nasaImages = response.value else {
+                guard let value = response.value else {
                     return completion([])
                 }
                 
-                completion(nasaImages.items)
+                completion(value.collection.items)
             }
     }
 }

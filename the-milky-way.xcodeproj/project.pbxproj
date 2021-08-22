@@ -21,8 +21,14 @@
 		C7FF4D9726D1685000388253 /* NasaImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4D9626D1685000388253 /* NasaImage.swift */; };
 		C7FF4DA026D17C2500388253 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4D9F26D17C2500388253 /* ApiManager.swift */; };
 		C7FF4DA826D17C3400388253 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4DA726D17C3400388253 /* ApiRouter.swift */; };
-		C7FF4DAD26D1816600388253 /* NasaImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4DAC26D1816600388253 /* NasaImages.swift */; };
+		C7FF4DAD26D1816600388253 /* NasaImageApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4DAC26D1816600388253 /* NasaImageApiResponse.swift */; };
 		C7FF4DB226D185C600388253 /* MilkyWayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4DB126D185C600388253 /* MilkyWayError.swift */; };
+		C7FF4DC326D20DDE00388253 /* NasaImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4DC226D20DDE00388253 /* NasaImageViewModel.swift */; };
+		C7FF4DCA26D2500F00388253 /* NasaImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4DC926D2500F00388253 /* NasaImageTableViewCell.swift */; };
+		C7FF4DCF26D2502300388253 /* NasaImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7FF4DCE26D2502300388253 /* NasaImageTableViewCell.xib */; };
+		C7FF4DD426D2CD6500388253 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4DD326D2CD6500388253 /* NetworkLogger.swift */; };
+		C7FF4DDC26D2D8AA00388253 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4DDB26D2D8AA00388253 /* MediaType.swift */; };
+		C7FF4DE226D2DC2200388253 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4DE126D2DC2200388253 /* StringExtension.swift */; };
 		EEF9618783A86F6602133D7B /* Pods_the_milky_wayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9236D15FB80F31184BFAD569 /* Pods_the_milky_wayTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,8 +75,14 @@
 		C7FF4D9626D1685000388253 /* NasaImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaImage.swift; sourceTree = "<group>"; };
 		C7FF4D9F26D17C2500388253 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		C7FF4DA726D17C3400388253 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
-		C7FF4DAC26D1816600388253 /* NasaImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaImages.swift; sourceTree = "<group>"; };
+		C7FF4DAC26D1816600388253 /* NasaImageApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaImageApiResponse.swift; sourceTree = "<group>"; };
 		C7FF4DB126D185C600388253 /* MilkyWayError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkyWayError.swift; sourceTree = "<group>"; };
+		C7FF4DC226D20DDE00388253 /* NasaImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaImageViewModel.swift; sourceTree = "<group>"; };
+		C7FF4DC926D2500F00388253 /* NasaImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaImageTableViewCell.swift; sourceTree = "<group>"; };
+		C7FF4DCE26D2502300388253 /* NasaImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NasaImageTableViewCell.xib; sourceTree = "<group>"; };
+		C7FF4DD326D2CD6500388253 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		C7FF4DDB26D2D8AA00388253 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
+		C7FF4DE126D2DC2200388253 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		CBACE2CC97D5E748E021CF86 /* Pods-the-milky-wayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-milky-wayTests.debug.xcconfig"; path = "Target Support Files/Pods-the-milky-wayTests/Pods-the-milky-wayTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB2DC2261FED638E131B5039 /* Pods-the-milky-way.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-milky-way.release.xcconfig"; path = "Target Support Files/Pods-the-milky-way/Pods-the-milky-way.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +153,8 @@
 		C71C974326D1521200C99900 /* the-milky-way */ = {
 			isa = PBXGroup;
 			children = (
+				C7FF4DE026D2DC1300388253 /* Extensions */,
+				C7FF4DC726D2149500388253 /* Views */,
 				C71C977B26D1561100C99900 /* Controllers */,
 				C71C977A26D155D900C99900 /* Models */,
 				C71C977926D155C900C99900 /* ViewModels */,
@@ -177,6 +191,7 @@
 			children = (
 				C7FF4D9F26D17C2500388253 /* ApiManager.swift */,
 				C7FF4DA726D17C3400388253 /* ApiRouter.swift */,
+				C7FF4DD326D2CD6500388253 /* NetworkLogger.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -194,6 +209,7 @@
 		C71C977926D155C900C99900 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				C7FF4DC226D20DDE00388253 /* NasaImageViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -202,7 +218,8 @@
 			isa = PBXGroup;
 			children = (
 				C7FF4D9626D1685000388253 /* NasaImage.swift */,
-				C7FF4DAC26D1816600388253 /* NasaImages.swift */,
+				C7FF4DAC26D1816600388253 /* NasaImageApiResponse.swift */,
+				C7FF4DDB26D2D8AA00388253 /* MediaType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -214,6 +231,23 @@
 				C71C978226D15F7100C99900 /* DetailsViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C7FF4DC726D2149500388253 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7FF4DC926D2500F00388253 /* NasaImageTableViewCell.swift */,
+				C7FF4DCE26D2502300388253 /* NasaImageTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C7FF4DE026D2DC1300388253 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C7FF4DE126D2DC2200388253 /* StringExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		FF1394B287A77353AB68B9B8 /* Frameworks */ = {
@@ -335,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7FF4DCF26D2502300388253 /* NasaImageTableViewCell.xib in Resources */,
 				C71C975126D1521300C99900 /* LaunchScreen.storyboard in Resources */,
 				C71C974E26D1521300C99900 /* Assets.xcassets in Resources */,
 				C71C974C26D1521200C99900 /* Main.storyboard in Resources */,
@@ -482,12 +517,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7FF4DDC26D2D8AA00388253 /* MediaType.swift in Sources */,
+				C7FF4DD426D2CD6500388253 /* NetworkLogger.swift in Sources */,
 				C71C974926D1521200C99900 /* ListViewController.swift in Sources */,
 				C71C974526D1521200C99900 /* AppDelegate.swift in Sources */,
 				C7FF4D9726D1685000388253 /* NasaImage.swift in Sources */,
+				C7FF4DC326D20DDE00388253 /* NasaImageViewModel.swift in Sources */,
 				C71C974726D1521200C99900 /* SceneDelegate.swift in Sources */,
-				C7FF4DAD26D1816600388253 /* NasaImages.swift in Sources */,
+				C7FF4DAD26D1816600388253 /* NasaImageApiResponse.swift in Sources */,
+				C7FF4DE226D2DC2200388253 /* StringExtension.swift in Sources */,
 				C7FF4DA026D17C2500388253 /* ApiManager.swift in Sources */,
+				C7FF4DCA26D2500F00388253 /* NasaImageTableViewCell.swift in Sources */,
 				C71C978326D15F7100C99900 /* DetailsViewController.swift in Sources */,
 				C7FF4DB226D185C600388253 /* MilkyWayError.swift in Sources */,
 				C7FF4DA826D17C3400388253 /* ApiRouter.swift in Sources */,

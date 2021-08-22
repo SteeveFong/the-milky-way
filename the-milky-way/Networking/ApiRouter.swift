@@ -38,7 +38,7 @@ enum ApiRouter {
         switch self {
         case .fetchNasaImages(let query):
             return [
-                "q": query ?? ""
+                "q": query ?? "\"\""
             ]
         }
     }
@@ -51,6 +51,11 @@ extension ApiRouter: URLRequestConvertible {
         
         var request = URLRequest(url: url)
         request.method = method
+        
+        if method == .get {
+            request = try URLEncodedFormParameterEncoder()
+              .encode(parameters, into: request)
+        }
         
         return request
     }
