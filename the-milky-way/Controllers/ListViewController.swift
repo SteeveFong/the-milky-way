@@ -70,8 +70,9 @@ class ListViewController: UIViewController {
         tableView.rx.didScroll.subscribe {
             event in
             let isLoading = (try? self.nasaImageViewModel.isLoading.value()) ?? false
+            let hasReachedMaxPage = (try? self.nasaImageViewModel.hasReachedMaxPage.value()) ?? false
             
-            if self.tableView.isNearBottomEdge() && !isLoading {
+            if self.tableView.isNearBottomEdge() && !isLoading && !hasReachedMaxPage {
                 self.nasaImageViewModel.fetchPaginatedItems()
             }
         }.disposed(by: bag)
