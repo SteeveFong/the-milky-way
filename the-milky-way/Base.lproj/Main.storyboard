@@ -81,7 +81,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Zb-ey-NNV" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="376"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KkX-i4-c02">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
@@ -115,6 +115,7 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ioH-4e-HAu" secondAttribute="bottom" constant="30" id="0lp-hX-ooi"/>
                                             <constraint firstItem="kYr-gX-6RG" firstAttribute="top" secondItem="sut-IF-Cfo" secondAttribute="bottom" constant="4" id="7Jp-R4-Bcf"/>
                                             <constraint firstItem="KkX-i4-c02" firstAttribute="top" secondItem="3Zb-ey-NNV" secondAttribute="top" id="Chr-ar-kyT"/>
                                             <constraint firstAttribute="trailing" secondItem="kYr-gX-6RG" secondAttribute="trailing" constant="16" id="Cz4-QD-sAO"/>

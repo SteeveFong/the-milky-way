@@ -12,7 +12,6 @@
 		C71C974726D1521200C99900 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71C974626D1521200C99900 /* SceneDelegate.swift */; };
 		C71C974926D1521200C99900 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71C974826D1521200C99900 /* ListViewController.swift */; };
 		C71C974C26D1521200C99900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71C974A26D1521200C99900 /* Main.storyboard */; };
-		C71C974E26D1521300C99900 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C71C974D26D1521300C99900 /* Assets.xcassets */; };
 		C71C975126D1521300C99900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71C974F26D1521300C99900 /* LaunchScreen.storyboard */; };
 		C71C975C26D1521300C99900 /* the_milky_wayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71C975B26D1521300C99900 /* the_milky_wayTests.swift */; };
 		C71C976726D1521300C99900 /* the_milky_wayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71C976626D1521300C99900 /* the_milky_wayUITests.swift */; };
@@ -35,6 +34,7 @@
 		C7FF4E5326D623F100388253 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4E5226D623F100388253 /* DesignableLabel.swift */; };
 		C7FF4E5B26D626CC00388253 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4E5A26D626CC00388253 /* UIScrollView.swift */; };
 		C7FF4E6026D680B200388253 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4E5F26D680B200388253 /* Link.swift */; };
+		C7FF4E6826D6B6F700388253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FF4E6726D6B6F700388253 /* Assets.xcassets */; };
 		EEF9618783A86F6602133D7B /* Pods_the_milky_wayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9236D15FB80F31184BFAD569 /* Pods_the_milky_wayTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +68,6 @@
 		C71C974626D1521200C99900 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C71C974826D1521200C99900 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		C71C974B26D1521200C99900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C71C974D26D1521300C99900 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C71C975026D1521300C99900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C71C975226D1521300C99900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C71C975726D1521300C99900 /* the-milky-wayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "the-milky-wayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +95,7 @@
 		C7FF4E5226D623F100388253 /* DesignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
 		C7FF4E5A26D626CC00388253 /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
 		C7FF4E5F26D680B200388253 /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		C7FF4E6726D6B6F700388253 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBACE2CC97D5E748E021CF86 /* Pods-the-milky-wayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-milky-wayTests.debug.xcconfig"; path = "Target Support Files/Pods-the-milky-wayTests/Pods-the-milky-wayTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB2DC2261FED638E131B5039 /* Pods-the-milky-way.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-milky-way.release.xcconfig"; path = "Target Support Files/Pods-the-milky-way/Pods-the-milky-way.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,7 +174,7 @@
 				C71C977826D155C100C99900 /* Common */,
 				C71C977726D155AD00C99900 /* Networking */,
 				C71C974A26D1521200C99900 /* Main.storyboard */,
-				C71C974D26D1521300C99900 /* Assets.xcassets */,
+				C7FF4E6726D6B6F700388253 /* Assets.xcassets */,
 				C7FF4DFC26D5643200388253 /* Colors.xcassets */,
 				C71C974F26D1521300C99900 /* LaunchScreen.storyboard */,
 				C71C975226D1521300C99900 /* Info.plist */,
@@ -392,7 +392,7 @@
 				C7FF4E4C26D6206300388253 /* Localizable.strings in Resources */,
 				C7FF4DCF26D2502300388253 /* NasaImageTableViewCell.xib in Resources */,
 				C71C975126D1521300C99900 /* LaunchScreen.storyboard in Resources */,
-				C71C974E26D1521300C99900 /* Assets.xcassets in Resources */,
+				C7FF4E6826D6B6F700388253 /* Assets.xcassets in Resources */,
 				C71C974C26D1521200C99900 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

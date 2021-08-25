@@ -16,12 +16,11 @@ class NetworkLogger: EventMonitor {
     }
     
     func request<Value>(_ request: DataRequest, didParseResponse response: DataResponse<Value, AFError>) {
-        // Uncomment when needed to view api response
-//        guard let data = response.data else {
-//            return
-//        }
-//        if let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) {
-//            print("Api Response received: \(json)")
-//        }
+        guard let data = response.data else {
+            return
+        }
+        if let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) {
+            print("Api Response received: \(json)")
+        }
     }
 }

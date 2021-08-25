@@ -9,6 +9,10 @@
 //MARK: - Details View Controller
 "backButtonTitle" = "The Milky Way";
 
+//MARK: - List View Controller
+"retryLabel" = "Retry";
+"errorTitle" = "That didn’t work!";
+
 //MARK: - Error messages
 "noDataError" = "It seems there is no data present for this search.";
-"unknownError" = "An unknown error occurred.";
+"unknownError" = "An unknown error has occurred.";

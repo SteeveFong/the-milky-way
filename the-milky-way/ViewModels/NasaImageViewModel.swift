@@ -9,10 +9,11 @@ import Foundation
 import RxSwift
 
 struct NasaImageViewModel {
-    var isLoading = BehaviorSubject(value: false)
-    var hasReachedMaxPage = BehaviorSubject(value: false)
     var currentPage = 1
+    var isLoading = BehaviorSubject(value: false)
     var items = BehaviorSubject<[NasaImage]>(value: [])
+    var hasReachedMaxPage = BehaviorSubject(value: false)
+    var errorValue = BehaviorSubject<MilkyWayError?>(value: nil)
     
     init() {
         fetchItems(page: currentPage)
@@ -24,7 +25,9 @@ struct NasaImageViewModel {
         ApiManager.shared.fetchNasaImages(page: page, nil) { result in
             switch result {
             case .failure(let error):
-                items.onError(error)
+                errorValue.onNext(error)
+                // force pagination to stop fetching new page on error
+                hasReachedMaxPage.onNext(true)
             case .success(let collection):
                 let prevValues = (try? items.value()) ?? []
                 items.onNext(prevValues + collection.items)

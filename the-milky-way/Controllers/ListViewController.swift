@@ -30,6 +30,7 @@ class ListViewController: UIViewController {
         
         bindTableViewData()
         bindLoadingEvent()
+        bindErrorEvent()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,11 +43,6 @@ class ListViewController: UIViewController {
     func bindTableViewData() {
         nasaImageViewModel
             .items
-            .catch({ (error) -> Observable<[NasaImage]> in
-                self.showAlert(error)
-                
-                return Observable.empty()
-            })
             .bind(to: tableView.rx.items(
                     cellIdentifier: cellIdentifier,
                     cellType: NasaImageTableViewCell.self)
@@ -101,10 +97,24 @@ class ListViewController: UIViewController {
         }.disposed(by: bag)
     }
     
-    private func showAlert(_ error: Error) {
-        let alert = UIAlertController.init(title: nil, message: error.localizedDescription, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
-            self.dismiss(animated: true, completion: nil)
+    //MARK: - Rx error events Setup
+    func bindErrorEvent() {
+        nasaImageViewModel.errorValue.subscribe {
+            event in
+            
+            if let error = event.element, error != nil {
+                 self.showAlert(error!)
+            }
+        }.disposed(by: bag)
+    }
+    
+    
+    private func showAlert(_ error: MilkyWayError) {
+        let alert = UIAlertController.init(title: "errorTitle".localized, message: error.localizedDescription, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "retryLabel".localized, style: .default, handler: { _ in
+            self.dismiss(animated: true, completion: {
+                self.nasaImageViewModel.refreshList()
+            })
         }))
         self.present(alert, animated: true, completion: nil)
     }
