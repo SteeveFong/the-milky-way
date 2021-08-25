@@ -9,18 +9,19 @@ import Foundation
 import Alamofire
 
 class NetworkLogger: EventMonitor {
-  let queue = DispatchQueue(label: "com.steeve.networklogger")
-
-  func requestDidFinish(_ request: Request) {
-    print("Api Request: \(request.description)")
-  }
-
-  func request<Value>(_ request: DataRequest, didParseResponse response: DataResponse<Value, AFError>) {
-    guard let data = response.data else {
-      return
+    let queue = DispatchQueue(label: "com.steeve.networklogger")
+    
+    func requestDidFinish(_ request: Request) {
+        print("Api Request: \(request.description)")
     }
-    if let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) {
-      print("Api Response received: \(json)")
+    
+    func request<Value>(_ request: DataRequest, didParseResponse response: DataResponse<Value, AFError>) {
+        // Uncomment when needed to view api response
+//        guard let data = response.data else {
+//            return
+//        }
+//        if let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) {
+//            print("Api Response received: \(json)")
+//        }
     }
-  }
 }

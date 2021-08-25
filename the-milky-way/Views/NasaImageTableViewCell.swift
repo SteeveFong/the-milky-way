@@ -6,28 +6,18 @@
 //
 
 import UIKit
+import SDWebImage
 
 class NasaImageTableViewCell: UITableViewCell {
     @IBOutlet weak var nasaImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var photographerLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
-    func setItem(_ item: NasaImageData) {
-        titleLabel.text = item.title
-        photographerLabel.text = item.photographer
-//        dateLabel.text = item.dateCreated?.description
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    func setItem(_ item: NasaImage) {
+        let data = item.data.first
         
-        // Configure the view for the selected state
+        titleLabel.text = data?.title
+        nasaImageView.sd_setImage(with: URL(string: item.links.first?.href ?? ""), completed: nil)
+        subtitleLabel.text = data?.getSubtitle()
     }
-    
 }

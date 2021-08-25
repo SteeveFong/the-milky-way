@@ -29,6 +29,12 @@
 		C7FF4DD426D2CD6500388253 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4DD326D2CD6500388253 /* NetworkLogger.swift */; };
 		C7FF4DDC26D2D8AA00388253 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4DDB26D2D8AA00388253 /* MediaType.swift */; };
 		C7FF4DE226D2DC2200388253 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4DE126D2DC2200388253 /* StringExtension.swift */; };
+		C7FF4DFD26D5643200388253 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FF4DFC26D5643200388253 /* Colors.xcassets */; };
+		C7FF4E1C26D571C900388253 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4E1B26D571C900388253 /* DateExtension.swift */; };
+		C7FF4E4C26D6206300388253 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7FF4E4E26D6206300388253 /* Localizable.strings */; };
+		C7FF4E5326D623F100388253 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4E5226D623F100388253 /* DesignableLabel.swift */; };
+		C7FF4E5B26D626CC00388253 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4E5A26D626CC00388253 /* UIScrollView.swift */; };
+		C7FF4E6026D680B200388253 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF4E5F26D680B200388253 /* Link.swift */; };
 		EEF9618783A86F6602133D7B /* Pods_the_milky_wayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9236D15FB80F31184BFAD569 /* Pods_the_milky_wayTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +89,13 @@
 		C7FF4DD326D2CD6500388253 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		C7FF4DDB26D2D8AA00388253 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
 		C7FF4DE126D2DC2200388253 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		C7FF4DFC26D5643200388253 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		C7FF4E1B26D571C900388253 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		C7FF4E3726D61DBC00388253 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		C7FF4E4D26D6206300388253 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7FF4E5226D623F100388253 /* DesignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
+		C7FF4E5A26D626CC00388253 /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
+		C7FF4E5F26D680B200388253 /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		CBACE2CC97D5E748E021CF86 /* Pods-the-milky-wayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-milky-wayTests.debug.xcconfig"; path = "Target Support Files/Pods-the-milky-wayTests/Pods-the-milky-wayTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB2DC2261FED638E131B5039 /* Pods-the-milky-way.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-milky-way.release.xcconfig"; path = "Target Support Files/Pods-the-milky-way/Pods-the-milky-way.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,8 +175,10 @@
 				C71C977726D155AD00C99900 /* Networking */,
 				C71C974A26D1521200C99900 /* Main.storyboard */,
 				C71C974D26D1521300C99900 /* Assets.xcassets */,
+				C7FF4DFC26D5643200388253 /* Colors.xcassets */,
 				C71C974F26D1521300C99900 /* LaunchScreen.storyboard */,
 				C71C975226D1521300C99900 /* Info.plist */,
+				C7FF4E4E26D6206300388253 /* Localizable.strings */,
 			);
 			path = "the-milky-way";
 			sourceTree = "<group>";
@@ -220,6 +235,7 @@
 				C7FF4D9626D1685000388253 /* NasaImage.swift */,
 				C7FF4DAC26D1816600388253 /* NasaImageApiResponse.swift */,
 				C7FF4DDB26D2D8AA00388253 /* MediaType.swift */,
+				C7FF4E5F26D680B200388253 /* Link.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -238,6 +254,7 @@
 			children = (
 				C7FF4DC926D2500F00388253 /* NasaImageTableViewCell.swift */,
 				C7FF4DCE26D2502300388253 /* NasaImageTableViewCell.xib */,
+				C7FF4E5226D623F100388253 /* DesignableLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -246,6 +263,8 @@
 			isa = PBXGroup;
 			children = (
 				C7FF4DE126D2DC2200388253 /* StringExtension.swift */,
+				C7FF4E1B26D571C900388253 /* DateExtension.swift */,
+				C7FF4E5A26D626CC00388253 /* UIScrollView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -369,6 +388,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7FF4DFD26D5643200388253 /* Colors.xcassets in Resources */,
+				C7FF4E4C26D6206300388253 /* Localizable.strings in Resources */,
 				C7FF4DCF26D2502300388253 /* NasaImageTableViewCell.xib in Resources */,
 				C71C975126D1521300C99900 /* LaunchScreen.storyboard in Resources */,
 				C71C974E26D1521300C99900 /* Assets.xcassets in Resources */,
@@ -518,9 +539,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7FF4DDC26D2D8AA00388253 /* MediaType.swift in Sources */,
+				C7FF4E1C26D571C900388253 /* DateExtension.swift in Sources */,
 				C7FF4DD426D2CD6500388253 /* NetworkLogger.swift in Sources */,
 				C71C974926D1521200C99900 /* ListViewController.swift in Sources */,
 				C71C974526D1521200C99900 /* AppDelegate.swift in Sources */,
+				C7FF4E5326D623F100388253 /* DesignableLabel.swift in Sources */,
 				C7FF4D9726D1685000388253 /* NasaImage.swift in Sources */,
 				C7FF4DC326D20DDE00388253 /* NasaImageViewModel.swift in Sources */,
 				C71C974726D1521200C99900 /* SceneDelegate.swift in Sources */,
@@ -530,6 +553,8 @@
 				C7FF4DCA26D2500F00388253 /* NasaImageTableViewCell.swift in Sources */,
 				C71C978326D15F7100C99900 /* DetailsViewController.swift in Sources */,
 				C7FF4DB226D185C600388253 /* MilkyWayError.swift in Sources */,
+				C7FF4E6026D680B200388253 /* Link.swift in Sources */,
+				C7FF4E5B26D626CC00388253 /* UIScrollView.swift in Sources */,
 				C7FF4DA826D17C3400388253 /* ApiRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,6 +595,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C71C974B26D1521200C99900 /* Base */,
+				C7FF4E3726D61DBC00388253 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -580,6 +606,14 @@
 				C71C975026D1521300C99900 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C7FF4E4E26D6206300388253 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7FF4E4D26D6206300388253 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -636,7 +670,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -691,7 +725,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

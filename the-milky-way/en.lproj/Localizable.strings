@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  the-milky-way
+
+  Created by Steeve Fong on 2021/08/21.
+  
+*/
+
+//MARK: - Details View Controller
+"backButtonTitle" = "The Milky Way";
+
+//MARK: - Error messages
+"noDataError" = "It seems there is no data present for this search.";
+"unknownError" = "An unknown error occurred.";

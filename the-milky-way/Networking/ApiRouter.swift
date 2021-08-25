@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 enum ApiRouter {
-    case fetchNasaImages(String?)
+    case fetchNasaImages(Int?, String?)
     
     var baseUrl: String {
         switch self {
@@ -36,8 +36,9 @@ enum ApiRouter {
     
     var parameters: [String: String]? {
         switch self {
-        case .fetchNasaImages(let query):
+        case .fetchNasaImages(let page, let query):
             return [
+                "page": page == nil ? "1" : "\(page!)",
                 "q": query ?? "\"\""
             ]
         }

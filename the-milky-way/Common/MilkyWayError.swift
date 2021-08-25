@@ -7,6 +7,19 @@
 
 import Foundation
 
-enum MilkyWayError {
-    case other(Error)
+enum MilkyWayError: Error {
+    case noData
+    case other(String?)
+}
+
+//MARK: - MilkyWayErrorExtension
+extension MilkyWayError: CustomStringConvertible {
+    public var description: String {
+        switch self {
+        case .noData:
+            return "noDataError".localized
+        case .other(let description):
+            return description ?? "unknownError".localized
+        }
+    }
 }

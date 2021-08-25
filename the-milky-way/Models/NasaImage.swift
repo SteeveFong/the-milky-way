@@ -16,8 +16,8 @@ struct NasaImage: Decodable {
 
 // MARK: - NasaImageData
 struct NasaImageData: Decodable {
-    let title, imageDescription, center, nasaID: String
-    let photographer: String?
+    let title, center, nasaID: String
+    let imageDescription, photographer: String?
     let mediaType: MediaType
     let keywords: [String]?
     let dateCreated: Date?
@@ -36,7 +36,7 @@ struct NasaImageData: Decodable {
         photographer = try? container.decode(String.self, forKey: .photographer)
         keywords = try? container.decode([String].self, forKey: .keywords)
         center = try container.decode(String.self, forKey: .center)
-        imageDescription = try container.decode(String.self, forKey: .imageDescription)
+        imageDescription = try? container.decode(String.self, forKey: .imageDescription)
         mediaType = try container.decode(MediaType.self, forKey: .mediaType)
         nasaID = try container.decode(String.self, forKey: .nasaID)
         
@@ -45,7 +45,15 @@ struct NasaImageData: Decodable {
     }
 }
 
-// MARK: - Link
-struct Link: Decodable {
-    let href, rel, render: String?
+// MARK: - NasaImageDataExtension
+extension NasaImageData {
+    func getSubtitle() -> String? {
+        let date = dateCreated?.displayImageDate()
+        
+        if date != nil && photographer != nil {
+            return [photographer!, date!].joined(separator: " | ")
+        } else {
+            return photographer ?? date
+        }
+    }
 }

@@ -6,9 +6,10 @@ target 'the-milky-way' do
   use_frameworks!
 
   # Pods for the-milky-way
-  pod 'Alamofire', '~> 5.4'
+  pod 'Alamofire', '5.4.3'
   pod 'RxSwift', '6.2.0'
   pod 'RxCocoa', '6.2.0'
+  pod 'SDWebImage', '5.11.1'
 
   target 'the-milky-wayTests' do
     inherit! :search_paths

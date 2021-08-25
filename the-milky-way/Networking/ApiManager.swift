@@ -24,17 +24,22 @@ class ApiManager {
         return Session(configuration: config, eventMonitors: eventMonitors)
     }()
     
-    func fetchNasaImages(_ query: String?, completion: @escaping ([NasaImage]) -> Void) {
+    func fetchNasaImages(page: Int, _ query: String?, completion: @escaping (Result<NasaImageCollection, MilkyWayError>) -> Void) {
+
         sessionManager
-            .request(ApiRouter.fetchNasaImages(query))
+            .request(ApiRouter.fetchNasaImages(page, query))
             .responseDecodable(of: NasaImageApiResponse.self) {
                 response in
                 
-                guard let value = response.value else {
-                    return completion([])
+                if (response.error != nil) {
+                    return completion(.failure(MilkyWayError.other(response.error?.errorDescription)))
                 }
                 
-                completion(value.collection.items)
+                guard let value = response.value else {
+                    return completion(.failure(MilkyWayError.noData))
+                }
+
+                completion(.success(value.collection))
             }
     }
 }
