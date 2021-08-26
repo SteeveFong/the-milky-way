@@ -13,7 +13,7 @@
 		C71C974926D1521200C99900 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71C974826D1521200C99900 /* ListViewController.swift */; };
 		C71C974C26D1521200C99900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71C974A26D1521200C99900 /* Main.storyboard */; };
 		C71C975126D1521300C99900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71C974F26D1521300C99900 /* LaunchScreen.storyboard */; };
-		C71C975C26D1521300C99900 /* the_milky_wayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71C975B26D1521300C99900 /* the_milky_wayTests.swift */; };
+		C71C975C26D1521300C99900 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71C975B26D1521300C99900 /* ExtensionTests.swift */; };
 		C71C976726D1521300C99900 /* the_milky_wayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71C976626D1521300C99900 /* the_milky_wayUITests.swift */; };
 		C71C978326D15F7100C99900 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71C978226D15F7100C99900 /* DetailsViewController.swift */; };
 		C7838FF207C456CEBED3AFFF /* Pods_the_milky_way.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E27A55649D9BD190D10AF46 /* Pods_the_milky_way.framework */; };
@@ -71,7 +71,7 @@
 		C71C975026D1521300C99900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C71C975226D1521300C99900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C71C975726D1521300C99900 /* the-milky-wayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "the-milky-wayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C71C975B26D1521300C99900 /* the_milky_wayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = the_milky_wayTests.swift; sourceTree = "<group>"; };
+		C71C975B26D1521300C99900 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 		C71C975D26D1521300C99900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C71C976226D1521300C99900 /* the-milky-wayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "the-milky-wayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71C976626D1521300C99900 /* the_milky_wayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = the_milky_wayUITests.swift; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 		C71C975A26D1521300C99900 /* the-milky-wayTests */ = {
 			isa = PBXGroup;
 			children = (
-				C71C975B26D1521300C99900 /* the_milky_wayTests.swift */,
+				C71C975B26D1521300C99900 /* ExtensionTests.swift */,
 				C71C975D26D1521300C99900 /* Info.plist */,
 			);
 			path = "the-milky-wayTests";
@@ -563,7 +563,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C71C975C26D1521300C99900 /* the_milky_wayTests.swift in Sources */,
+				C71C975C26D1521300C99900 /* ExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
