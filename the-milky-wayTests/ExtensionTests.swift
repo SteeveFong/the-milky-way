@@ -1,5 +1,5 @@
 //
-//  the_milky_wayTests.swift
+//  ExtensionTests.swift
 //  TheMilkyWayTests
 //
 //  Created by Steeve Fong on 2021/08/21.
@@ -8,7 +8,7 @@
 import XCTest
 @testable import the_milky_way
 
-class TheMilkyWayTests: XCTestCase {
+class ExtensionTests: XCTestCase {
     func testDisplayImageDateInProperFormat() throws {
         let test = "2002-03-20T00:00:00Z".iso8601ToDate()
         let test2 = "2009-12-21T00:00:00Z".iso8601ToDate()
